@@ -7,34 +7,41 @@
   const mobileNav = document.getElementById("mobileNav");
   const cursorGlow = document.querySelector(".cursor-glow");
 
+  if (!header) return;
+
   // Header scroll behavior
   function updateHeader() {
-    const heroBottom = hero.offsetHeight - 100;
     const scrolled = window.scrollY > 40;
 
-    header.classList.toggle("scrolled", scrolled);
-    header.classList.toggle("on-hero", window.scrollY < heroBottom);
+    if (hero) {
+      const heroBottom = hero.offsetHeight - 100;
+      header.classList.toggle("on-hero", window.scrollY < heroBottom);
+    }
+
+    header.classList.toggle("scrolled", scrolled || !hero || document.body.classList.contains("page-sub"));
   }
 
   window.addEventListener("scroll", updateHeader, { passive: true });
   updateHeader();
 
   // Mobile menu
-  menuToggle.addEventListener("click", () => {
-    const open = menuToggle.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(open));
-    mobileNav.hidden = !open;
-    document.body.style.overflow = open ? "hidden" : "";
-  });
-
-  mobileNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menuToggle.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      mobileNav.hidden = true;
-      document.body.style.overflow = "";
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener("click", () => {
+      const open = menuToggle.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+      mobileNav.hidden = !open;
+      document.body.style.overflow = open ? "hidden" : "";
     });
-  });
+
+    mobileNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        menuToggle.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        mobileNav.hidden = true;
+        document.body.style.overflow = "";
+      });
+    });
+  }
 
   // Scroll reveal
   const revealEls = document.querySelectorAll(".reveal");
@@ -66,7 +73,7 @@
   });
 
   // Subtle cursor glow on desktop
-  if (window.matchMedia("(pointer: fine)").matches) {
+  if (cursorGlow && window.matchMedia("(pointer: fine)").matches) {
     document.body.classList.add("has-mouse");
     let rafId = null;
     let targetX = 0;

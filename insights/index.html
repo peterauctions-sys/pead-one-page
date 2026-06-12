@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights | Pead — Award Winning Comms Agency NZ</title>
+  <meta name="description" content="News, ideas and perspectives from Pead — thinking intended to provoke action." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="page-sub page-insights">
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header scrolled" id="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo" aria-label="Pead home">pead<span class="logo-dot">.</span></a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#capabilities">Capabilities</a>
+        <a href="index.html" class="nav-active">Insights</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact" class="nav-cta">Let's talk</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="mobileNav" aria-label="Mobile" hidden>
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#capabilities">Capabilities</a>
+      <a href="index.html">Insights</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Let's talk</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero insights-hero">
+      <div class="container page-hero-inner">
+        <p class="eyebrow reveal">News &amp; Insights</p>
+        <h1 class="page-hero-title reveal">Thinking intended to <em>provoke action.</em></h1>
+        <p class="page-hero-lead reveal">
+          Perspectives on communications, reputation, crisis, digital and culture — from the team at New Zealand's leading independent comms agency.
+        </p>
+      </div>
+    </section>
+
+    <section class="insights-featured" id="featuredInsight" aria-label="Featured insight"></section>
+
+    <section class="insights-main">
+      <div class="container insights-layout">
+        <div class="insights-content">
+          <div class="insights-toolbar reveal">
+            <div class="insights-filters" role="tablist" aria-label="Filter insights by topic">
+              <button class="filter-btn active" data-filter="all" type="button">All</button>
+              <button class="filter-btn" data-filter="crisis" type="button">Crisis &amp; Issues</button>
+              <button class="filter-btn" data-filter="digital" type="button">Digital &amp; AI</button>
+              <button class="filter-btn" data-filter="leadership" type="button">Leadership</button>
+              <button class="filter-btn" data-filter="strategy" type="button">Strategy</button>
+              <button class="filter-btn" data-filter="industry" type="button">Industry</button>
+              <button class="filter-btn" data-filter="news" type="button">News</button>
+            </div>
+            <p class="insights-count" id="insightsCount" aria-live="polite"></p>
+          </div>
+
+          <div class="insights-grid" id="insightsGrid" aria-live="polite"></div>
+
+          <div class="insights-load-more reveal">
+            <button class="btn btn-ghost" id="loadMoreBtn" type="button">Load more articles</button>
+          </div>
+        </div>
+
+        <aside class="insights-sidebar reveal" aria-label="Insights sidebar">
+          <div class="sidebar-card">
+            <p class="sidebar-label">Topics we write about</p>
+            <ul class="sidebar-topics">
+              <li>Crisis &amp; reputation management</li>
+              <li>Digital communications &amp; AI</li>
+              <li>Media relations &amp; storytelling</li>
+              <li>Internal communications</li>
+              <li>Government &amp; stakeholder relations</li>
+              <li>Brand &amp; campaign strategy</li>
+            </ul>
+          </div>
+          <div class="sidebar-card sidebar-card-dark">
+            <p class="sidebar-label">Stay in the loop</p>
+            <h3>Want counsel, not just content?</h3>
+            <p>Our team turns sharp thinking into communications that move the dial.</p>
+            <a href="../index.html#contact" class="btn btn-primary btn-light">Talk to Pead</a>
+          </div>
+          <div class="sidebar-card">
+            <p class="sidebar-label">From the awards room</p>
+            <p class="sidebar-stat">2025 PRINZ Supreme Award for the world's largest haka campaign.</p>
+            <a href="../index.html#work" class="work-link">See our work <span aria-hidden="true">→</span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="../index.html" class="logo logo-footer">pead<span class="logo-dot">.</span></a>
+      <div class="footer-links">
+        <a href="https://www.facebook.com/wearepead" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/wearepead/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com/company/pead/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.tiktok.com/@wearepead" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Pead. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/data/insights-data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/insights.js"></script>
+</body>
+</html>
