@@ -520,10 +520,6 @@ body.has-mouse .cursor-glow {
   margin-bottom: var(--space-xl);
 }
 
-.work-card-featured .work-card-media {
-  aspect-ratio: 16 / 11;
-}
-
 .work-card {
   background: var(--color-white);
   display: flex;
