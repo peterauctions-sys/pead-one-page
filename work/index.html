@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work | Pead — Award Winning Comms Agency NZ</title>
+  <meta name="description" content="Award-winning campaigns and client work from Pead — New Zealand's leading independent communications agency." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="page-sub page-work">
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header scrolled" id="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo" aria-label="Pead home">pead<span class="logo-dot">.</span></a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="index.html" class="nav-active">Work</a>
+        <a href="../corporate/index.html">Corporate</a>
+        <a href="../consumer/index.html">Consumer</a>
+        <a href="../digital/index.html">Digital</a>
+        <a href="../insights/index.html">Insights</a>
+        <a href="https://www.alleyescreative.co.nz/" class="nav-external" target="_blank" rel="noopener">All Eyes Creative<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3.5 2.5h6v6M9 3L3 9"/></svg></a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact" class="nav-cta">Let's talk</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+    <nav class="nav-mobile" id="mobileNav" aria-label="Mobile" hidden>
+      <a href="index.html">Work</a>
+      <a href="../corporate/index.html">Corporate</a>
+      <a href="../consumer/index.html">Consumer</a>
+      <a href="../digital/index.html">Digital</a>
+      <a href="../insights/index.html">Insights</a>
+      <a href="https://www.alleyescreative.co.nz/" target="_blank" rel="noopener">All Eyes Creative</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Let's talk</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero work-hero">
+      <div class="container page-hero-inner">
+        <p class="eyebrow reveal">Our work</p>
+        <h1 class="page-hero-title reveal">Delivering exceptional results<br /><em>that exceed client expectations.</em></h1>
+        <p class="page-hero-lead reveal">
+          Award-winning campaigns, corporate reputation work and consumer brand storytelling — from New Zealand's leading independent comms agency.
+        </p>
+      </div>
+    </section>
+
+    <section class="work-featured" id="workFeatured" aria-label="Featured project"></section>
+
+    <section class="work-page-main">
+      <div class="container">
+        <div class="work-toolbar reveal">
+          <div class="work-filters" role="tablist" aria-label="Filter work by type">
+            <button class="work-filter-btn filter-btn active" data-filter="all" type="button">All</button>
+            <button class="work-filter-btn filter-btn" data-filter="award" type="button">Award-winning</button>
+            <button class="work-filter-btn filter-btn" data-filter="corporate" type="button">Corporate</button>
+            <button class="work-filter-btn filter-btn" data-filter="consumer" type="button">Consumer</button>
+            <button class="work-filter-btn filter-btn" data-filter="purpose" type="button">Purpose</button>
+            <button class="work-filter-btn filter-btn" data-filter="events" type="button">Events</button>
+          </div>
+          <p class="work-count" id="workCount" aria-live="polite"></p>
+        </div>
+
+        <div class="work-grid work-grid-page" id="workGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="work-awards-section">
+      <div class="container awards-block">
+        <p class="section-label reveal">Awards &amp; recognition</p>
+        <h2 class="section-title reveal">Recognised for work that moves people.</h2>
+        <div class="awards-list" id="awardsList"></div>
+      </div>
+    </section>
+
+    <section class="work-showcase" id="showcase">
+      <div class="container work-showcase-header reveal">
+        <p class="section-label">Showreel</p>
+        <h2 class="section-title">See the work in motion.</h2>
+        <p class="section-body">The same campaign film and case-study slider from pead.co.nz — press play to watch.</p>
+      </div>
+
+      <div class="work-showcase-video-wrap reveal" id="workShowcaseVideoWrap">
+        <video
+          id="workShowcaseVideo"
+          class="work-showcase-video"
+          playsinline
+          preload="metadata"
+          loop
+          muted
+          aria-label="Pead campaign showreel"
+        ></video>
+        <div class="work-showcase-overlay" aria-hidden="true"></div>
+        <button class="work-video-play" id="workVideoPlay" type="button" aria-label="Play showreel">
+          <span class="work-video-play-icon" aria-hidden="true"></span>
+          <span>Play showreel</span>
+        </button>
+        <div class="work-showcase-caption container">
+          <p class="work-showcase-caption-title">Campaigns that move people</p>
+          <p class="work-showcase-caption-sub">Award-winning work across corporate, consumer and purpose-led brands</p>
+        </div>
+      </div>
+
+      <div class="work-reel" aria-label="Featured case studies">
+        <div class="work-reel-track" id="workReelTrack"></div>
+      </div>
+    </section>
+
+    <section class="work-cta">
+      <div class="container work-cta-inner reveal">
+        <h2 class="section-title">Building, protecting, or rebooting your reputation?</h2>
+        <p class="section-body">We're here. Let's talk about what Pead can do for your brand.</p>
+        <a href="../index.html#contact" class="btn btn-primary btn-large">Let's talk</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="../index.html" class="logo logo-footer">pead<span class="logo-dot">.</span></a>
+      <div class="footer-links">
+        <a href="../corporate/index.html">Corporate</a>
+        <a href="../consumer/index.html">Consumer</a>
+        <a href="../digital/index.html">Digital</a>
+        <a href="../insights/index.html">Insights</a>
+        <a href="https://www.alleyescreative.co.nz/" target="_blank" rel="noopener">All Eyes Creative</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Pead. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+  <script src="../js/data/work-data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/work.js"></script>
+  <script src="../js/work-video.js"></script>
+</body>
+</html>
